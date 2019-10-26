@@ -1,0 +1,1 @@
+select cs.name, pd.name, ct.name, pd.price from cashier cs inner join product pd on cs.id = pd.id_cashier inner join category ct on ct.id = pd.id_category order by pd.price asc;
